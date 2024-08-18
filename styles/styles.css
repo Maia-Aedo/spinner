@@ -1,16 +1,46 @@
 body{
     height: 90vh;
-    background-color: rgb(68, 67, 67);display: flex;
+    background-color: rgb(68, 67, 67);
     justify-content: center;
     align-items: center;
 }
 
-.boton{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 550px;
 }
 
-#btn{
+.btn{
     text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 8px;
+}
+
+.btn:hover{
+    background: rgb(204, 199, 199);
+    border: solid #a32684;
+}
+
+#spinner{
+    display: none;
+    animation: spin 3s linear infinite;
+}
+
+/* transiciones */
+@keyframes spin { 
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}
+
+footer {
+    text-align: center;
+    color: white;
 }
