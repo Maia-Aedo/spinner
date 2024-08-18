@@ -1,0 +1,16 @@
+body{
+    height: 90vh;
+    background-color: rgb(68, 67, 67);display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn{
+    text-transform: uppercase;
+}
